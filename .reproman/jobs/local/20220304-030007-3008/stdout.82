@@ -1,1 +1,609 @@
-../../../../.git/annex/objects/G9/PW/MD5E-s49647--b8de3ad52a9745adf9afe2cf36ed7241.82/MD5E-s49647--b8de3ad52a9745adf9afe2cf36ed7241.82
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run --cleanenv code/containers/images/bids/bids-mriqc--21.0.0rc2.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc participant --participant-label '5120' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds003604_sub-5120' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds003604 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc
+220306-04:30:46,856 cli IMPORTANT:
+	 
+    Running MRIQC version 21.0.0rc2:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc.
+      * Analysis levels: ['participant'].
+
+220306-04:30:47,671 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:16,782 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:42,71 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220306-04:31:42,112 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220306-04:31:42,509 nipype.workflow INFO:
+	 Running in parallel.
+220306-04:31:42,519 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 74 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220306-04:31:42,693 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-5..func..sub-5120_ses-5_task-Sem_acq-D1S6_run-01_bold.nii.gz/provenance".
+220306-04:31:42,728 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-04:31:43,379 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-04:31:43,379 nipype.workflow INFO:
+	 [Job 9] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-04:31:43,479 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-5..func..sub-5120_ses-5_task-Sem_acq-D1S6_run-01_bold.nii.gz/metadata".
+220306-04:31:43,520 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-04:31:50,931 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:52,450 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:52,478 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:55,145 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:56,197 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:56,210 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:56,280 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:56,310 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,288 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,316 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,337 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,337 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,499 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,526 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,567 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:57,782 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:58,408 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:58,945 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:59,90 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:59,749 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:59,791 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:59,808 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:31:59,955 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:00,1 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:00,18 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:00,266 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:00,319 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:00,570 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:00,761 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,220 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,266 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,379 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,385 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,450 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,507 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,510 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,625 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,626 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,630 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,634 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,682 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,687 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,690 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,699 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,707 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,763 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,819 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,821 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,825 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,875 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,898 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,905 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,943 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:01,983 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:02,3 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:32:02,6 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220306-04:40:48,510 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-04:40:48,511 nipype.workflow INFO:
+	 [Job 10] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-04:40:48,897 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Gram_acq-D3S2_run-02_bold.nii.gz/provenance".
+220306-04:40:48,911 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-04:40:49,397 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-04:40:49,398 nipype.workflow INFO:
+	 [Job 12] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-04:40:49,495 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Gram_acq-D3S2_run-02_bold.nii.gz/metadata".
+220306-04:40:49,509 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-04:47:46,796 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-04:47:46,796 nipype.workflow INFO:
+	 [Job 13] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-04:47:47,115 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Gram_acq-D3S4_run-01_bold.nii.gz/provenance".
+220306-04:47:47,125 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-04:47:47,613 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-04:47:47,613 nipype.workflow INFO:
+	 [Job 15] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-04:47:47,707 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Gram_acq-D3S4_run-01_bold.nii.gz/metadata".
+220306-04:47:47,713 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-04:54:39,56 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-04:54:39,56 nipype.workflow INFO:
+	 [Job 16] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-04:54:39,402 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Phon_acq-D3S6_run-02_bold.nii.gz/provenance".
+220306-04:54:39,410 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-04:54:40,18 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-04:54:40,19 nipype.workflow INFO:
+	 [Job 18] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-04:54:40,110 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Phon_acq-D3S6_run-02_bold.nii.gz/metadata".
+220306-04:54:40,117 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:01:27,337 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:01:27,337 nipype.workflow INFO:
+	 [Job 19] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:01:27,691 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Phon_acq-D3S8_run-01_bold.nii.gz/provenance".
+220306-05:01:27,699 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:01:28,81 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:01:28,82 nipype.workflow INFO:
+	 [Job 21] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:01:28,174 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Phon_acq-D3S8_run-01_bold.nii.gz/metadata".
+220306-05:01:28,180 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:08:12,342 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:08:12,352 nipype.workflow INFO:
+	 [Job 22] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:08:12,670 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D1S3_run-02_bold.nii.gz/provenance".
+220306-05:08:12,678 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:08:13,131 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:08:13,131 nipype.workflow INFO:
+	 [Job 24] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:08:13,221 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D1S3_run-02_bold.nii.gz/metadata".
+220306-05:08:13,227 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:14:54,908 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:14:54,908 nipype.workflow INFO:
+	 [Job 25] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:14:55,255 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D1S5_run-01_bold.nii.gz/provenance".
+220306-05:14:55,262 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:14:55,720 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:14:55,720 nipype.workflow INFO:
+	 [Job 27] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:14:55,810 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D1S5_run-01_bold.nii.gz/metadata".
+220306-05:14:55,816 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:21:39,659 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:21:39,659 nipype.workflow INFO:
+	 [Job 28] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:21:39,982 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D2S2_run-02_bold.nii.gz/provenance".
+220306-05:21:40,1 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:21:40,587 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:21:40,587 nipype.workflow INFO:
+	 [Job 30] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:21:40,675 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D2S2_run-02_bold.nii.gz/metadata".
+220306-05:21:40,697 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:28:33,756 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:28:33,757 nipype.workflow INFO:
+	 [Job 31] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:28:34,85 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D2S4_run-01_bold.nii.gz/provenance".
+220306-05:28:34,102 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:28:34,585 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:28:34,585 nipype.workflow INFO:
+	 [Job 33] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:28:34,676 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Plaus_acq-D2S4_run-01_bold.nii.gz/metadata".
+220306-05:28:34,688 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:35:15,193 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:35:15,194 nipype.workflow INFO:
+	 [Job 34] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:35:15,494 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D1S7_run-02_bold.nii.gz/provenance".
+220306-05:35:15,501 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:35:15,963 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:35:15,963 nipype.workflow INFO:
+	 [Job 36] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:35:16,57 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D1S7_run-02_bold.nii.gz/metadata".
+220306-05:35:16,63 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:41:54,151 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:41:54,151 nipype.workflow INFO:
+	 [Job 37] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:41:54,481 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D1S9_run-01_bold.nii.gz/provenance".
+220306-05:41:54,490 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:41:54,860 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:41:54,860 nipype.workflow INFO:
+	 [Job 39] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:41:54,955 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D1S9_run-01_bold.nii.gz/metadata".
+220306-05:41:54,962 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:48:32,693 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:48:32,702 nipype.workflow INFO:
+	 [Job 40] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:48:33,53 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D2S8_run-02_bold.nii.gz/provenance".
+220306-05:48:33,62 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:48:33,445 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:48:33,445 nipype.workflow INFO:
+	 [Job 42] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:48:33,538 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D2S8_run-02_bold.nii.gz/metadata".
+220306-05:48:33,544 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-05:55:12,3 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-05:55:12,3 nipype.workflow INFO:
+	 [Job 43] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-05:55:12,379 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D2S10_run-01_bold.nii.gz/provenance".
+220306-05:55:12,387 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-05:55:12,785 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-05:55:12,785 nipype.workflow INFO:
+	 [Job 45] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-05:55:12,881 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D2S10_run-01_bold.nii.gz/metadata".
+220306-05:55:12,887 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:01:57,564 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:01:57,811 nipype.workflow INFO:
+	 [Job 46] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:01:58,126 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Gram_acq-D1S7_run-01_bold.nii.gz/provenance".
+220306-06:01:58,134 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:01:58,600 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:01:58,600 nipype.workflow INFO:
+	 [Job 48] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:01:58,697 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Gram_acq-D1S7_run-01_bold.nii.gz/metadata".
+220306-06:01:58,707 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:08:41,41 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:08:41,41 nipype.workflow INFO:
+	 [Job 49] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:08:41,460 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Gram_acq-D1S9_run-02_bold.nii.gz/provenance".
+220306-06:08:41,468 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:08:41,959 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:08:41,959 nipype.workflow INFO:
+	 [Job 51] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:08:42,76 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Gram_acq-D1S9_run-02_bold.nii.gz/metadata".
+220306-06:08:42,82 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:16:23,152 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:16:23,153 nipype.workflow INFO:
+	 [Job 52] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:16:23,600 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Phon_acq-D1S3_run-01_bold.nii.gz/provenance".
+220306-06:16:23,611 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:16:23,984 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:16:23,984 nipype.workflow INFO:
+	 [Job 54] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:16:24,106 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Phon_acq-D1S3_run-01_bold.nii.gz/metadata".
+220306-06:16:24,114 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:23:40,321 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:23:40,322 nipype.workflow INFO:
+	 [Job 55] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:23:40,747 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Phon_acq-D1S5_run-02_bold.nii.gz/provenance".
+220306-06:23:40,762 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:23:41,284 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:23:41,284 nipype.workflow INFO:
+	 [Job 57] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:23:41,400 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Phon_acq-D1S5_run-02_bold.nii.gz/metadata".
+220306-06:23:41,410 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:31:24,28 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:31:24,28 nipype.workflow INFO:
+	 [Job 58] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:31:24,477 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Plaus_acq-D2S2_run-01_bold.nii.gz/provenance".
+220306-06:31:24,486 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:31:24,991 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:31:24,991 nipype.workflow INFO:
+	 [Job 60] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:31:25,121 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Plaus_acq-D2S2_run-01_bold.nii.gz/metadata".
+220306-06:31:25,127 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:39:00,198 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:39:00,199 nipype.workflow INFO:
+	 [Job 61] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:39:00,694 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Plaus_acq-D2S4_run-02_bold.nii.gz/provenance".
+220306-06:39:00,706 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:39:01,211 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:39:01,211 nipype.workflow INFO:
+	 [Job 63] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:39:01,357 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Plaus_acq-D2S4_run-02_bold.nii.gz/metadata".
+220306-06:39:01,364 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:46:26,226 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:46:26,227 nipype.workflow INFO:
+	 [Job 64] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:46:26,663 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Plaus_acq-D2S10_run-01_bold.nii.gz/provenance".
+220306-06:46:26,673 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:46:27,150 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:46:27,150 nipype.workflow INFO:
+	 [Job 66] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:46:27,277 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Plaus_acq-D2S10_run-01_bold.nii.gz/metadata".
+220306-06:46:27,283 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-06:54:14,273 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-06:54:14,273 nipype.workflow INFO:
+	 [Job 67] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-06:54:14,808 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Sem_acq-D2S6_run-01_bold.nii.gz/provenance".
+220306-06:54:14,817 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-06:54:15,173 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-06:54:15,173 nipype.workflow INFO:
+	 [Job 69] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-06:54:15,350 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Sem_acq-D2S6_run-01_bold.nii.gz/metadata".
+220306-06:54:15,356 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-07:01:28,598 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-07:01:28,598 nipype.workflow INFO:
+	 [Job 70] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-07:01:29,17 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Sem_acq-D2S8_run-02_bold.nii.gz/provenance".
+220306-07:01:29,26 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220306-07:01:29,461 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220306-07:01:29,461 nipype.workflow INFO:
+	 [Job 72] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220306-07:01:29,588 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..func..sub-5120_ses-9_task-Sem_acq-D2S8_run-02_bold.nii.gz/metadata".
+220306-07:01:29,595 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220306-07:08:41,103 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220306-07:08:41,104 nipype.workflow INFO:
+	 [Job 73] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220306-07:08:41,597 nipype.workflow INFO:
+	 [Job 0] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220306-07:08:41,598 nipype.workflow INFO:
+	 [Job 1] Completed (mriqc_wf.anatMRIQC.conform).
+220306-07:08:41,599 nipype.workflow INFO:
+	 [Job 2] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220306-07:08:41,600 nipype.workflow INFO:
+	 [Job 3] Completed (mriqc_wf.anatMRIQC.conform).
+220306-07:08:41,601 nipype.workflow INFO:
+	 [Job 4] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220306-07:08:41,602 nipype.workflow INFO:
+	 [Job 5] Completed (mriqc_wf.anatMRIQC.conform).
+220306-07:08:41,602 nipype.workflow INFO:
+	 [Job 6] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220306-07:08:41,603 nipype.workflow INFO:
+	 [Job 7] Completed (mriqc_wf.anatMRIQC.conform).
+220306-07:08:41,604 nipype.workflow INFO:
+	 [Job 8] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,605 nipype.workflow INFO:
+	 [Job 11] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,606 nipype.workflow INFO:
+	 [Job 14] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,607 nipype.workflow INFO:
+	 [Job 17] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,607 nipype.workflow INFO:
+	 [Job 20] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,608 nipype.workflow INFO:
+	 [Job 23] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,609 nipype.workflow INFO:
+	 [Job 26] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,610 nipype.workflow INFO:
+	 [Job 29] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,611 nipype.workflow INFO:
+	 [Job 32] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,612 nipype.workflow INFO:
+	 [Job 35] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,612 nipype.workflow INFO:
+	 [Job 38] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,613 nipype.workflow INFO:
+	 [Job 41] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,614 nipype.workflow INFO:
+	 [Job 44] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,615 nipype.workflow INFO:
+	 [Job 47] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,616 nipype.workflow INFO:
+	 [Job 50] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,616 nipype.workflow INFO:
+	 [Job 53] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,617 nipype.workflow INFO:
+	 [Job 56] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,618 nipype.workflow INFO:
+	 [Job 59] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,619 nipype.workflow INFO:
+	 [Job 62] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,620 nipype.workflow INFO:
+	 [Job 65] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,621 nipype.workflow INFO:
+	 [Job 68] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,621 nipype.workflow INFO:
+	 [Job 71] Completed (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220306-07:08:41,624 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 34 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220306-07:08:42,811 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:42,812 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/anatMRIQC/AFNISkullStripWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-5..anat..sub-5120_ses-5_acq-D1S2_T1w.nii.gz/inu_n4)
+220306-07:08:42,829 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:42,831 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/anatMRIQC/AFNISkullStripWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..anat..sub-5120_ses-9_acq-D1S11_T1w.nii.gz/inu_n4)
+220306-07:08:42,947 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:42,947 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:42,947 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:42,947 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:42,948 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-5..anat..sub-5120_ses-5_acq-D1S2_T1w.nii.gz/PlotMosaicNoise)
+220306-07:08:42,948 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/anatMRIQC/AirMaskWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..anat..sub-5120_ses-9_acq-D1S11_T1w.nii.gz/RotationMask)
+220306-07:08:42,948 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..anat..sub-5120_ses-7_acq-D1S2_T1w.nii.gz/PlotMosaicNoise)
+220306-07:08:42,948 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-9..anat..sub-5120_ses-9_acq-D1S2_T1w.nii.gz/PlotMosaicNoise)
+220306-07:08:43,1 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:43,1 nipype.workflow WARNING:
+	 Storing result file without outputs
+220306-07:08:43,2 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.funcMRIQC.sanitize" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D2S8_run-02_bold.nii.gz/sanitize)
+220306-07:08:43,3 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.funcMRIQC.sanitize" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5120/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5120..ses-7..func..sub-5120_ses-7_task-Sem_acq-D1S7_run-02_bold.nii.gz/sanitize)
+220306-07:08:43,597 nipype.workflow ERROR:
+	 Node inu_n4.a0 failed to run on host c134-132.frontera.tacc.utexas.edu.
+220306-07:08:43,598 nipype.workflow ERROR:
+	 Saving crash info to /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/logs/crash-20220306-070843-jbwexler-inu_n4.a0-34b02f53-6326-4fe7-8213-95dffc2910e0.txt
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 67, in run_node
+    result["result"] = node.run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 723, in _run_command
+    cmd = self._interface.cmdline
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 732, in cmdline
+    allargs = [self._cmd_prefix + self.cmd] + self._parse_inputs()
+  File "/opt/conda/lib/python3.8/site-packages/niworkflows/interfaces/fixes.py", line 138, in _parse_inputs
+    datamin = input_nii.get_fdata().min()
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/dataobj_images.py", line 355, in get_fdata
+    data = np.asanyarray(self._dataobj, dtype=dtype)
+  File "/opt/conda/lib/python3.8/site-packages/numpy/core/_asarray.py", line 171, in asanyarray
+    return array(a, dtype, copy=False, order=order, subok=True)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 391, in __array__
+    arr = self._get_scaled(dtype=dtype, slicer=())
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/arrayproxy.py", line 358, in _get_scaled
+    scaled = apply_read_scaling(self._get_unscaled(slicer=slicer), scl_slope, scl_inter)
+  File "/opt/conda/lib/python3.8/site-packages/nibabel/volumeutils.py", line 959, in apply_read_scaling
+    arr = arr * slope
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 96.0 MiB for an array with shape (192, 256, 256) and data type float64
+

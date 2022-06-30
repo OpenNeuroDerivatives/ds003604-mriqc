@@ -1,1 +1,38 @@
-../../../../.git/annex/objects/q8/09/MD5E-s3497--4267a1ccf775531b8462f009460f0d57.152/MD5E-s3497--4267a1ccf775531b8462f009460f0d57.152
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run --cleanenv code/containers/images/bids/bids-mriqc--22.0.0rc1.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc participant --participant-label '5457' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds003604_sub-5457' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds003604 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc
+220415-06:03:17,629 cli IMPORTANT:
+	 
+    Running MRIQC version 22.0.0rc1:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc.
+      * Analysis levels: ['participant'].
+
+220415-06:04:29,96 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220415-06:04:29,127 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220415-06:04:29,314 nipype.workflow INFO:
+	 Running in parallel.
+220415-06:04:29,320 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 31 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 11/11.
+220415-06:04:29,420 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5457/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5457..ses-7..func..sub-5457_ses-7_task-Gram_acq-D1S13_run-02_bold.nii.gz/metadata".
+220415-06:04:29,444 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220415-06:12:55,214 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220415-06:12:55,214 nipype.workflow INFO:
+	 [Job 4] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220415-06:12:55,537 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.provenance" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5457/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5457..ses-7..func..sub-5457_ses-7_task-Gram_acq-D1S13_run-02_bold.nii.gz/provenance".
+220415-06:12:55,543 nipype.workflow INFO:
+	 [Node] Running "provenance" ("mriqc.interfaces.reports.AddProvenance")
+220415-06:12:56,12 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.provenance".
+220415-06:12:56,12 nipype.workflow INFO:
+	 [Job 6] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220415-06:12:56,97 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5457/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5457..ses-7..func..sub-5457_ses-7_task-Phon_acq-D1S5_run-02_bold.nii.gz/metadata".
+220415-06:12:56,103 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")

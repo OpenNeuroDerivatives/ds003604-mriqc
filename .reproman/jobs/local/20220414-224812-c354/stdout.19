@@ -1,1 +1,22 @@
-../../../../.git/annex/objects/j1/mk/MD5E-s2047--b0249bc7f6acb32f2094fd1b614b8fa4.19/MD5E-s2047--b0249bc7f6acb32f2094fd1b614b8fa4.19
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run --cleanenv code/containers/images/bids/bids-mriqc--22.0.0rc1.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc participant --participant-label '5179' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds003604_sub-5179' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds003604 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc
+220415-06:03:36,149 cli IMPORTANT:
+	 
+    Running MRIQC version 22.0.0rc1:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc.
+      * Analysis levels: ['participant'].
+
+220415-06:04:46,327 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220415-06:04:46,357 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220415-06:04:46,678 nipype.workflow INFO:
+	 Running in parallel.
+220415-06:04:46,689 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 62 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 11/11.
+220415-06:04:46,823 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5179/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5179..ses-5..func..sub-5179_ses-5_task-Gram_acq-D1S12_run-02_bold.nii.gz/metadata".
+220415-06:04:46,830 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")

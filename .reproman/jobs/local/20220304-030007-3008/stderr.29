@@ -1,1 +1,65 @@
-../../../../.git/annex/objects/vK/qJ/MD5E-s4168--e35eca27159d73e6d31bf220b37a7a4d.29/MD5E-s4168--e35eca27159d73e6d31bf220b37a7a4d.29
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 344, in _send_procs_to_workers
+    self.procs[jobid].run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 428, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/niworkflows/interfaces/bids.py", line 778, in _run_interface
+    self.layout = _init_layout(
+  File "/opt/conda/lib/python3.8/site-packages/niworkflows/utils/bids.py", line 261, in _init_layout
+    layout = BIDSLayout(str(bids_dir), validate=validate)
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/layout.py", line 156, in __init__
+    indexer(self)
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/index.py", line 112, in __call__
+    self._index_metadata()
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/index.py", line 380, in _index_metadata
+    file_md.update(pl())
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/index.py", line 273, in load_json
+    with open(path, 'r', encoding='utf-8') as handle:
+MemoryError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/bin/mriqc", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.8/site-packages/mriqc/cli/run.py", line 95, in main
+    mriqc_wf.run(**config.nipype.get_plugin())
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/base.py", line 184, in run
+    self._send_procs_to_workers(updatehash=updatehash, graph=graph)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 347, in _send_procs_to_workers
+    self._clean_queue(
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/base.py", line 227, in _clean_queue
+    raise RuntimeError("".join(result["traceback"]))
+RuntimeError: Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/plugins/multiproc.py", line 344, in _send_procs_to_workers
+    self.procs[jobid].run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 516, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 635, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/pipeline/engine/nodes.py", line 741, in _run_command
+    result = self._interface.run(cwd=outdir)
+  File "/opt/conda/lib/python3.8/site-packages/nipype/interfaces/base/core.py", line 428, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.8/site-packages/niworkflows/interfaces/bids.py", line 778, in _run_interface
+    self.layout = _init_layout(
+  File "/opt/conda/lib/python3.8/site-packages/niworkflows/utils/bids.py", line 261, in _init_layout
+    layout = BIDSLayout(str(bids_dir), validate=validate)
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/layout.py", line 156, in __init__
+    indexer(self)
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/index.py", line 112, in __call__
+    self._index_metadata()
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/index.py", line 380, in _index_metadata
+    file_md.update(pl())
+  File "/opt/conda/lib/python3.8/site-packages/bids/layout/index.py", line 273, in load_json
+    with open(path, 'r', encoding='utf-8') as handle:
+MemoryError
+

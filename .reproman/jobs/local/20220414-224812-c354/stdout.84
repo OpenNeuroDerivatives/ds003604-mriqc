@@ -1,1 +1,3 @@
-../../../../.git/annex/objects/0G/3g/MD5E-s553--3f5060dcc90ef01ea70f42eaf79bfd58.84/MD5E-s553--3f5060dcc90ef01ea70f42eaf79bfd58.84
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run --cleanenv code/containers/images/bids/bids-mriqc--22.0.0rc1.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc participant --participant-label '5311' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds003604_sub-5311' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds003604 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc
