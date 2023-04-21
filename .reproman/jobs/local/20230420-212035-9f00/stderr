@@ -1,0 +1,6 @@
+WARNING (04/20/23 21:21:05): LAUNCHER_WORKDIR variable not set. Using current directory.
+using /tmp/launcher.5408056.hostlist.cnW8zGOB to get hosts
+starting job on c209-014
+slurmstepd: error: *** JOB 5408056 ON c209-014 CANCELLED AT 2023-04-20T22:50:50 ***
+Terminated
+Killed by signal 15.
