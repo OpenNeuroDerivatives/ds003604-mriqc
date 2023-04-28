@@ -1,0 +1,169 @@
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-mriqc--22.0.6.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc participant --participant-label '5187' -w '/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds003604 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc
+221102-03:09:30,698 cli IMPORTANT:
+	 
+    Running MRIQC version 22.0.6:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc.
+      * Analysis levels: ['participant'].
+
+221102-03:09:30,890 nipype.workflow INFO:
+	 Building functional MRIQC workflow for files: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Gram_acq-D1S4_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Gram_acq-D1S7_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Phon_acq-D1S9_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Phon_acq-D1S11_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Plaus_acq-D2S7_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Plaus_acq-D2S11_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Sem_acq-D2S2_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-7/func/sub-5187_ses-7_task-Sem_acq-D2S4_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Gram_acq-D1S4_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Gram_acq-D1S6_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Phon_acq-D1S9_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Phon_acq-D1S11_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Plaus_acq-D2S2_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Plaus_acq-D2S7_run-02_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Sem_acq-D2S9_run-01_bold.nii.gz, /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/sourcedata/raw/sub-5187/ses-9/func/sub-5187_ses-9_task-Sem_acq-D2S11_run-02_bold.nii.gz.
+221102-03:09:39,536 nipype.workflow INFO:
+	 Building anatomical MRIQC workflow for 3 NIfTI files..
+221102-03:10:43,876 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+221102-03:10:44,83 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+221102-03:10:44,509 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.datalad_get" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/anatMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..anat..sub-5187_ses-7_acq-D1S2_T1w.nii.gz/datalad_get".
+221102-03:10:44,519 nipype.workflow INFO:
+	 [Node] Executing "datalad_get" <mriqc.interfaces.datalad.DataladIdentityInterface>
+221102-03:10:44,521 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.datalad_get" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/anatMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..anat..sub-5187_ses-7_acq-D1S3_T1w.nii.gz/datalad_get".
+221102-03:10:44,543 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.datalad_get" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/anatMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..anat..sub-5187_ses-9_acq-D1S2_T1w.nii.gz/datalad_get".
+221102-03:10:44,573 nipype.workflow INFO:
+	 [Node] Executing "datalad_get" <mriqc.interfaces.datalad.DataladIdentityInterface>
+221102-03:10:44,613 nipype.workflow INFO:
+	 [Node] Executing "datalad_get" <mriqc.interfaces.datalad.DataladIdentityInterface>
+221102-03:10:44,619 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Gram_acq-D1S4_run-01_bold.nii.gz/metadata".
+221102-03:10:44,710 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:10:44,776 nipype.workflow INFO:
+	 [Node] Finished "datalad_get", elapsed time 0.239438s.
+221102-03:10:44,843 nipype.workflow INFO:
+	 [Node] Finished "datalad_get", elapsed time 0.24429s.
+221102-03:10:44,879 nipype.workflow INFO:
+	 [Node] Finished "datalad_get", elapsed time 0.245033s.
+221102-03:16:56,403 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 371.667659s.
+221102-03:16:56,825 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Gram_acq-D1S7_run-02_bold.nii.gz/metadata".
+221102-03:16:56,905 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:22:51,172 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 354.265634s.
+221102-03:22:51,626 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Phon_acq-D1S9_run-01_bold.nii.gz/metadata".
+221102-03:22:51,634 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:28:45,542 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 353.90711s.
+221102-03:28:45,946 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Phon_acq-D1S11_run-02_bold.nii.gz/metadata".
+221102-03:28:45,954 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:34:36,202 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 350.246976s.
+221102-03:34:36,688 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Plaus_acq-D2S7_run-02_bold.nii.gz/metadata".
+221102-03:34:36,774 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:40:27,579 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 350.804414s.
+221102-03:40:27,944 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Plaus_acq-D2S11_run-01_bold.nii.gz/metadata".
+221102-03:40:27,988 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:46:15,653 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 347.664565s.
+221102-03:46:16,93 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Sem_acq-D2S2_run-02_bold.nii.gz/metadata".
+221102-03:46:16,151 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:52:04,227 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 348.075613s.
+221102-03:52:04,731 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-7..func..sub-5187_ses-7_task-Sem_acq-D2S4_run-01_bold.nii.gz/metadata".
+221102-03:52:04,740 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-03:57:48,609 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 343.868192s.
+221102-03:57:49,109 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Gram_acq-D1S4_run-02_bold.nii.gz/metadata".
+221102-03:57:49,134 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:03:42,204 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 353.068908s.
+221102-04:03:42,746 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Gram_acq-D1S6_run-01_bold.nii.gz/metadata".
+221102-04:03:42,831 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:09:43,285 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 360.453314s.
+221102-04:09:43,757 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Phon_acq-D1S9_run-02_bold.nii.gz/metadata".
+221102-04:09:43,765 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:15:40,113 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 356.347343s.
+221102-04:15:40,520 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Phon_acq-D1S11_run-01_bold.nii.gz/metadata".
+221102-04:15:40,527 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:21:33,867 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 353.338827s.
+221102-04:21:34,446 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Plaus_acq-D2S2_run-01_bold.nii.gz/metadata".
+221102-04:21:34,454 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:27:40,206 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 365.751553s.
+221102-04:27:40,637 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Plaus_acq-D2S7_run-02_bold.nii.gz/metadata".
+221102-04:27:40,664 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:33:54,135 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 373.46998s.
+221102-04:33:54,554 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Sem_acq-D2S9_run-01_bold.nii.gz/metadata".
+221102-04:33:54,609 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:39:58,87 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 363.477577s.
+221102-04:39:58,823 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Sem_acq-D2S11_run-02_bold.nii.gz/metadata".
+221102-04:39:59,33 nipype.workflow INFO:
+	 [Node] Executing "metadata" <niworkflows.interfaces.bids.ReadSidecarJSON>
+221102-04:42:06,614 nipype.workflow INFO:
+	 [Node] Finished "metadata", elapsed time 127.508819s.
+221102-04:42:06,614 nipype.workflow WARNING:
+	 Storing result file without outputs
+221102-04:42:06,664 nipype.workflow WARNING:
+	 [Node] Error on "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" (/scratch1/03201/jbwexler/work_dir/mriqc/ds003604_sub-5187/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds003604-mriqc..sourcedata..raw..sub-5187..ses-9..func..sub-5187_ses-9_task-Sem_acq-D2S11_run-02_bold.nii.gz/metadata)
+221102-04:42:06,670 nipype.workflow ERROR:
+	 Node metadata.a15 failed to run on host c179-161.frontera.tacc.utexas.edu.
+221102-04:42:06,671 nipype.workflow ERROR:
+	 Saving crash info to /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds003604-mriqc/logs/crash-20221102-044206-jbwexler-metadata.a15-f938f3c4-1ba8-44d7-a1e5-a48825f87e8b.txt
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/engine/plugin.py", line 576, in _send_procs_to_workers
+    self.procs[jobid].run(updatehash=updatehash)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/nodes.py", line 524, in run
+    result = self._run_interface(execute=True)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/nodes.py", line 642, in _run_interface
+    return self._run_command(execute)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/nodes.py", line 750, in _run_command
+    raise NodeExecutionError(
+nipype.pipeline.engine.nodes.NodeExecutionError: Exception raised while executing Node metadata.
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/site-packages/nipype/interfaces/base/core.py", line 398, in run
+    runtime = self._run_interface(runtime)
+  File "/opt/conda/lib/python3.9/site-packages/niworkflows/interfaces/bids.py", line 807, in _run_interface
+    self.layout = _init_layout(
+  File "/opt/conda/lib/python3.9/site-packages/niworkflows/utils/bids.py", line 293, in _init_layout
+    layout = BIDSLayout(str(bids_dir), validate=validate)
+  File "/opt/conda/lib/python3.9/site-packages/bids/layout/layout.py", line 152, in __init__
+    indexer(self)
+  File "/opt/conda/lib/python3.9/site-packages/bids/layout/index.py", line 111, in __call__
+    self._index_metadata()
+  File "/opt/conda/lib/python3.9/site-packages/bids/layout/index.py", line 375, in _index_metadata
+    file_md.update(pl())
+  File "/opt/conda/lib/python3.9/site-packages/bids/layout/index.py", line 267, in load_json
+    with open(path, 'r', encoding='utf-8') as handle:
+MemoryError
+
+

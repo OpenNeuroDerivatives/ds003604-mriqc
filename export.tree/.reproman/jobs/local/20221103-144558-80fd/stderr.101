@@ -1,0 +1,43 @@
+Process Process-2:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/opt/conda/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/cli/workflow.py", line 40, in build_workflow
+    from mriqc.workflows.core import init_mriqc_wf
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/workflows/__init__.py", line 36, in <module>
+    from mriqc.workflows.anatomical import anat_qc_workflow
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/workflows/anatomical.py", line 54, in <module>
+    from mriqc.interfaces import (
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/interfaces/__init__.py", line 25, in <module>
+    from mriqc.interfaces.anatomical import (
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/interfaces/anatomical.py", line 45, in <module>
+    from nipype.interfaces.base import (
+  File "/opt/conda/lib/python3.9/site-packages/nipype/__init__.py", line 63, in <module>
+    from .pipeline import Node, MapNode, JoinNode, Workflow
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/__init__.py", line 9, in <module>
+    from .engine import Node, MapNode, JoinNode, Workflow
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/__init__.py", line 11, in <module>
+    from .workflows import Workflow
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/workflows.py", line 23, in <module>
+    from ...interfaces.base import traits, TraitedSpec, TraitDictObject, TraitListObject
+  File "/opt/conda/lib/python3.9/site-packages/nipype/interfaces/__init__.py", line 11, in <module>
+    from .io import DataGrabber, DataSink, SelectFiles, BIDSDataGrabber
+  File "/opt/conda/lib/python3.9/site-packages/nipype/interfaces/io.py", line 29, in <module>
+    from ..utils.filemanip import (
+  File "/opt/conda/lib/python3.9/site-packages/nipype/utils/filemanip.py", line 278, in <module>
+    _cifs_table = _generate_cifs_table()
+  File "/opt/conda/lib/python3.9/site-packages/nipype/utils/filemanip.py", line 274, in _generate_cifs_table
+    exit_code, output = sp.getstatusoutput("mount")
+  File "/opt/conda/lib/python3.9/subprocess.py", line 628, in getstatusoutput
+    data = check_output(cmd, shell=True, text=True, stderr=STDOUT)
+  File "/opt/conda/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/opt/conda/lib/python3.9/subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/opt/conda/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/conda/lib/python3.9/subprocess.py", line 1754, in _execute_child
+    self.pid = _posixsubprocess.fork_exec(
+OSError: [Errno 12] Cannot allocate memory
