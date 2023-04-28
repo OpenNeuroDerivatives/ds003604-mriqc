@@ -1,0 +1,56 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-0ar1vo21 because the default path (/home/mriqc/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-bb28ykct because the default path (/home/mriqc/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-pnswwvnm because the default path (/home/mriqc/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Traceback (most recent call last):
+  File "/opt/conda/bin/mriqc", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/cli/run.py", line 159, in main
+    mriqc_wf.run(**_plugin)
+  File "/opt/conda/lib/python3.9/site-packages/nipype/pipeline/engine/workflows.py", line 638, in run
+    runner.run(execgraph, updatehash=updatehash, config=self.config)
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/engine/plugin.py", line 200, in run
+    self._send_procs_to_workers(updatehash=updatehash, graph=graph)
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/engine/plugin.py", line 599, in _send_procs_to_workers
+    tid = self._submit_job(deepcopy(self.procs[jobid]), updatehash=updatehash)
+  File "/opt/conda/lib/python3.9/site-packages/mriqc/engine/plugin.py", line 467, in _submit_job
+    result_future = self.pool.submit(run_node, node, updatehash, self._taskid)
+  File "/opt/conda/lib/python3.9/concurrent/futures/process.py", line 697, in submit
+    self._adjust_process_count()
+  File "/opt/conda/lib/python3.9/concurrent/futures/process.py", line 675, in _adjust_process_count
+    p.start()
+  File "/opt/conda/lib/python3.9/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/opt/conda/lib/python3.9/multiprocessing/context.py", line 277, in _Popen
+    return Popen(process_obj)
+  File "/opt/conda/lib/python3.9/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/opt/conda/lib/python3.9/multiprocessing/popen_fork.py", line 66, in _launch
+    self.pid = os.fork()
+OSError: [Errno 12] Cannot allocate memory
