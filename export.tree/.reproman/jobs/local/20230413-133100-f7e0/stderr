@@ -1,0 +1,25 @@
+Warning: Permanently added 'c179-021' (ECDSA) to the list of known hosts.
+WARNING (04/18/23 23:02:19): LAUNCHER_WORKDIR variable not set. Using current directory.
+using /tmp/launcher.5397400.hostlist.4tSSyqF0 to get hosts
+starting job on c179-021
+starting job on c179-022
+starting job on c179-023
+starting job on c179-024
+starting job on c179-031
+starting job on c179-032
+starting job on c179-033
+starting job on c179-034
+starting job on c179-041
+starting job on c179-042
+starting job on c179-043
+starting job on c179-044
+starting job on c189-124
+starting job on c189-131
+starting job on c189-132
+starting job on c189-133
+slurmstepd: error: *** JOB 5397400 ON c179-021 CANCELLED AT 2023-04-19T04:47:50 ***
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Killed by signal 15.
+Terminated

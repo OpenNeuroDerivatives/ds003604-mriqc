@@ -1,0 +1,91 @@
+Warning: Permanently added 'c101-174' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c101-202' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c102-011' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c102-023' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c103-072' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c103-103' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c103-111' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c103-153' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c103-174' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c104-054' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c104-154' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c104-191' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c104-202' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c105-002' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c105-011' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c105-031' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c105-033' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c105-081' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c105-203' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c106-133' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c107-114' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c108-002' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c108-023' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c108-051' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c113-012' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c114-133' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c115-031' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c119-121' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c120-152' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c120-163' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c121-004' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c121-191' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c121-193' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c122-162' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c123-033' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c123-053' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c126-151' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c129-142' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c191-042' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c191-043' (ED25519) to the list of known hosts.
+WARNING (04/15/22 00:32:16): LAUNCHER_WORKDIR variable not set. Using current directory.
+using /tmp/launcher.4242368.hostlist.GTWi57v4 to get hosts
+starting job on c101-072
+starting job on c101-174
+starting job on c101-202
+starting job on c102-011
+starting job on c102-023
+starting job on c102-034
+starting job on c103-072
+starting job on c103-103
+starting job on c103-111
+starting job on c103-153
+starting job on c103-174
+starting job on c104-054
+starting job on c104-154
+starting job on c104-191
+starting job on c104-202
+starting job on c105-002
+starting job on c105-011
+starting job on c105-031
+starting job on c105-033
+starting job on c105-081
+starting job on c105-203
+starting job on c106-133
+starting job on c107-114
+starting job on c108-002
+starting job on c108-023
+starting job on c108-051
+starting job on c113-012
+starting job on c114-133
+starting job on c115-031
+starting job on c117-094
+starting job on c119-121
+starting job on c120-152
+starting job on c120-163
+starting job on c121-004
+starting job on c121-174
+starting job on c121-191
+starting job on c121-193
+starting job on c122-162
+starting job on c123-033
+starting job on c123-053
+starting job on c124-144
+starting job on c126-151
+starting job on c129-142
+starting job on c191-042
+starting job on c191-043
+hostfile_replace_entries: link /home1/03201/jbwexler/.ssh/known_hosts to /home1/03201/jbwexler/.ssh/known_hosts.old: File exists
+update_known_hosts: hostfile_replace_entries failed for /home1/03201/jbwexler/.ssh/known_hosts: File exists
+slurmstepd: error: *** JOB 4242368 ON c101-072 CANCELLED AT 2022-04-15T01:16:45 ***
+Terminated

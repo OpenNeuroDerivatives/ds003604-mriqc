@@ -1,0 +1,33 @@
+Warning: Permanently added 'c105-064' (ED25519) to the list of known hosts.
+WARNING (11/01/22 22:01:15): LAUNCHER_WORKDIR variable not set. Using current directory.
+using /tmp/launcher.4961354.hostlist.HoiTLJCg to get hosts
+starting job on c105-064
+starting job on c106-033
+starting job on c106-042
+starting job on c106-094
+starting job on c106-124
+starting job on c106-141
+starting job on c108-002
+starting job on c108-023
+starting job on c108-053
+starting job on c108-063
+starting job on c108-074
+starting job on c108-124
+starting job on c179-101
+starting job on c179-102
+starting job on c179-112
+starting job on c179-113
+starting job on c179-154
+starting job on c179-161
+starting job on c184-122
+starting job on c184-123
+starting job on c184-142
+starting job on c184-143
+starting job on c184-154
+starting job on c184-161
+starting job on c184-183
+starting job on c184-184
+starting job on c184-192
+starting job on c184-193
+slurmstepd: error: *** JOB 4961354 ON c105-064 CANCELLED AT 2022-11-02T02:34:10 ***
+Terminated
